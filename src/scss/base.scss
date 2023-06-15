@@ -1,7 +1,17 @@
+//===========vars============
+$baseFontSize: 16px;
+$h1Size: clamp(2.125rem, 1.534rem + 2.95vw, 3.75rem);
+$h2Size: clamp(2rem, 1.818rem + 0.91vw, 2.5rem);
+$titleSize: clamp(2.125rem, 1.989rem + 0.68vw, 2.5rem);
+
 //==========markup page==================
+
 html,
 body {
+	font-family: PTSans;
 	height: 100%;
+	font-size: $baseFontSize;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -12,4 +22,27 @@ body {
 
 main {
 	flex: 1 1 auto;
+}
+
+h1 {
+	font-size: $h1Size;
+	color: #fff;
+	font-weight: 400;
+	line-height: 120%;
+	text-align: center;
+}
+
+h2 {
+	font-size: $h2Size;
+	display: block;
+	color: #343434;
+	font-weight: 600;
+}
+
+.title {
+	color: #343434;
+	font-size: $titleSize;
+	line-height: 40px;
+	font-weight: 400;
+	text-align: center;
 }
