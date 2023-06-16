@@ -4,6 +4,7 @@ $h1Size: clamp(2.125rem, 1.534rem + 2.95vw, 3.75rem);
 $h2Size: clamp(2rem, 1.818rem + 0.91vw, 2.5rem);
 $titleSize: clamp(2.125rem, 1.989rem + 0.68vw, 2.5rem);
 
+$accentColor: #bf1e2d;
 //==========markup page==================
 
 html,
@@ -12,6 +13,7 @@ body {
 	height: 100%;
 	font-size: $baseFontSize;
 	overflow-x: hidden;
+	background-color: rgb(126, 125, 125);
 }
 
 .wrapper {
@@ -45,4 +47,10 @@ h2 {
 	line-height: 40px;
 	font-weight: 400;
 	text-align: center;
+}
+
+._container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
