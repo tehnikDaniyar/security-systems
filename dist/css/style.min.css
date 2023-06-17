@@ -119,34 +119,6 @@ legend {
   display: block;
 }
 
-@font-face {
-  font-family: PTSans;
-  font-display: swap;
-  src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: PTSans;
-  font-display: swap;
-  src: url("../fonts/PTSans-BoldItalic.woff2") format("woff2"), url("../fonts/PTSans-BoldItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: PTSans;
-  font-display: swap;
-  src: url("../fonts/PTSans-Italic.woff2") format("woff2"), url("../fonts/PTSans-Italic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: PTSans;
-  font-display: swap;
-  src: url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
 html,
 body {
   font-family: PTSans;
@@ -168,7 +140,6 @@ main {
 h1 {
   font-size: clamp(2.125rem, 1.534rem + 2.95vw, 3.75rem);
   color: #fff;
-  font-weight: 400;
   line-height: 120%;
   text-align: center;
 }
@@ -207,6 +178,34 @@ h2 {
   z-index: -1;
 }
 
+@font-face {
+  font-family: PTSans;
+  font-display: swap;
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: PTSans;
+  font-display: swap;
+  src: url("../fonts/PTSans-BoldItalic.woff2") format("woff2"), url("../fonts/PTSans-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PTSans;
+  font-display: swap;
+  src: url("../fonts/PTSans-Italic.woff2") format("woff2"), url("../fonts/PTSans-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: PTSans;
+  font-display: swap;
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 .header {
   padding: 45px 0 25px 0;
   position: fixed;
@@ -307,20 +306,65 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+.top__subtitle {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.top__button {
+  letter-spacing: 0.8px;
+  background-color: #038f28;
+  color: white;
+  min-width: 355px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 18px 20px 20px;
+  margin-bottom: 15px;
+}
+.top__message {
+  font-weight: 700;
+  color: white;
+}
 .top img {
   object-position: top;
 }
 
 .services {
+  padding-left: 60px;
   /* .services__body */
   /* .services__item */
 }
 .services__body {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+.services__item {
+  flex: 0 1 200px;
+}
+
 .item-services {
+  padding: 10px 20px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.531);
   /* .item-services__title */
   /* .item-services__list */
   /* .item-services__inner */
   /* .item-services__link */
+}
+.item-services__title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 169.2307692308%;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+}
+.item-services__inner {
+  margin-bottom: 10px;
+}
+.item-services__link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
