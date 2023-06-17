@@ -1,0 +1,72 @@
+.top {
+
+	/* .top__container */
+
+	&__container {}
+
+	/* .top__content */
+
+	&__content {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* .top__title */
+
+	&__title {}
+
+	/* .top__subtitle */
+
+	&__subtitle {}
+
+	/* .top__button */
+
+	&__button {}
+
+	/* .top__message */
+
+	&__message {}
+
+	/* .top__services */
+
+	&__services {}
+
+	img {
+		object-position: top;
+	}
+}
+
+.services {
+
+	/* .services__body */
+
+	&__body {
+		display: flex;
+	}
+
+	/* .services__item */
+
+	&__item {}
+}
+
+.item-services {
+
+	/* .item-services__title */
+
+	&__title {}
+
+	/* .item-services__list */
+
+	&__list {}
+
+	/* .item-services__inner */
+
+	&__inner {}
+
+	/* .item-services__link */
+
+	&__link {}
+}
