@@ -33,7 +33,7 @@
 
 	@media (max-width:767px) {
 		display: block;
-		width: 60px;
+		width: 40px;
 		height: 30px;
 		position: relative;
 		z-index: 50;
@@ -41,12 +41,12 @@
 }
 
 .icon-menu._active {
-	&::before {
+	&::after {
 		top: 50%;
 		transform: translate(0, -50%) rotate(45deg);
 	}
 
-	&::after {
+	&::before {
 		bottom: 50%;
 		transform: translate(0, 50%) rotate(-45deg);
 	}

@@ -1,6 +1,6 @@
 export const iconMenu = () => {
 	const iconMenu = document.querySelector('.icon-menu');
-	const headerList = document.querySelector('.header__list');
+	const headerList = document.querySelector('.menu-header');
 	const body = document.querySelector('body');
 
 	if (iconMenu) {
