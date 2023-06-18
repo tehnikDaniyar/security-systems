@@ -21,6 +21,10 @@ body {
 	overflow-x: hidden;
 }
 
+body {
+	position: relative;
+}
+
 .wrapper {
 	height: 100%;
 	display: flex;
@@ -28,6 +32,8 @@ body {
 }
 
 main {
+	position: relative;
+
 	flex: 1 1 auto;
 }
 
