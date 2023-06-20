@@ -11,7 +11,7 @@
 
 	&.scroll {
 		background-color: rgb(75, 71, 71);
-		padding: 25px 0 15px 0;
+		padding: 15px 0 5px 0;
 	}
 
 
@@ -34,6 +34,10 @@
 		margin-right: 60px;
 		text-transform: uppercase;
 		font-weight: 700;
+
+		@media (max-width:767px) {
+			margin-right: 0;
+		}
 
 	}
 
@@ -90,6 +94,8 @@
 .menu-header {
 	display: flex;
 	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
 
 	@media (max-width:767px) {
 		width: 50%;
@@ -106,6 +112,7 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: all 0.5s ease 0s;
+		align-items: flex-end;
 	}
 
 	&._show {
