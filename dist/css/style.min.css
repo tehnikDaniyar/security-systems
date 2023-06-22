@@ -124,7 +124,6 @@ body {
   font-family: PTSans;
   height: 100%;
   font-size: 16px;
-  overflow-x: hidden;
 }
 
 body {
@@ -410,12 +409,12 @@ h2 {
   /* .top__message */
   /* .top__services */
 }
-.top__content {
+.top__body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .top__subtitle {
   color: white;
@@ -426,13 +425,14 @@ h2 {
   letter-spacing: 0.8px;
   background-color: #038f28;
   color: white;
-  max-width: 355px;
+  width: clamp(18.75rem, 10.288rem + 42.31vw, 22.188rem);
   font-size: 18px;
   font-weight: 600;
   padding: 18px 20px 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .top__message {
+  text-align: center;
   font-weight: 700;
   color: white;
 }
@@ -441,7 +441,7 @@ h2 {
 }
 
 .services {
-  padding-left: 60px;
+  padding: 0 0 30px 60px;
   /* .services__body */
   /* .services__item */
 }

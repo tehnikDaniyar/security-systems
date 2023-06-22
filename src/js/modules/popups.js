@@ -1,6 +1,7 @@
 export const popups = () => {
 	const popupLinks = document.querySelectorAll('.popup-link');
 	const body = document.querySelector('body');
+	const header = document.querySelector('.header');
 	const lockPadding = document.querySelectorAll('.lock-padding');
 	const popupCloseIcons = document.querySelectorAll('.popup__close');
 	let unlock = true;
