@@ -1,0 +1,45 @@
+.form {
+
+	/* .form__title */
+
+	&__title {
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
+		text-transform: uppercase;
+		// margin-bottom: 10px;
+	}
+
+	/* .form__subtitle */
+
+	&__subtitle {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	/* .form__input */
+
+	&__input {
+		display: block;
+		padding: 5px 10px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		margin-bottom: 5px;
+
+		&::placeholder {
+			color: black;
+		}
+	}
+
+	/* .form__button */
+
+	&__button {
+		display: block;
+		padding: 20px 15px;
+		background-color: $accentColor;
+		margin-top: 10px;
+		width: 100%;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
