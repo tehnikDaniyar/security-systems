@@ -41,13 +41,21 @@
 
 .popup__content {
 	background-color: #fff;
-	max-width: 50%;
+	max-width: 30%;
 	color: black;
 	padding: 30px;
 	position: relative;
 	transform: perspective(600px) translate(0, -100%) rotateX(45deg);
 	opacity: 0;
 	transition: all 0.8s ease 0s;
+
+	@media (max-width:996px) {
+		max-width: 60%;
+	}
+
+	@media (max-width:767px) {
+		max-width: 90%;
+	}
 }
 
 // #popup_three .popup__content {
