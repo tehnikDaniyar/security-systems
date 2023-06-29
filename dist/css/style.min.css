@@ -153,6 +153,7 @@ h2 {
   display: block;
   color: #343434;
   font-weight: 600;
+  text-align: center;
 }
 
 .title {
@@ -400,6 +401,8 @@ h2 {
 .page {
   /* .page__top */
   /* .page__info */
+  /* .page__howWeWorking */
+  /* .page__excellence */
 }
 .top {
   /* .top__container */
@@ -684,4 +687,100 @@ h2 {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.howWeWorking {
+  padding: 60px 0;
+  /* .howWeWorking_container */
+  /* .howWeWorking__title */
+  /* .howWeWorking__body */
+  /* .howWeWorking__item */
+  /* .howWeWorking__icon */
+  /* .howWeWorking__text */
+}
+.howWeWorking__title {
+  margin-bottom: 50px;
+}
+.howWeWorking__body {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 996px) {
+  .howWeWorking__body {
+    justify-content: center;
+  }
+}
+.howWeWorking__item {
+  flex: 0 0 100px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 996px) {
+  .howWeWorking__item {
+    position: relative;
+    justify-content: start;
+    align-items: start;
+  }
+  .howWeWorking__item:not(:last-child):nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/howWeWorking/arrowDown.png");
+    right: -50px;
+    bottom: -30px;
+    width: 96px;
+    height: 17px;
+  }
+  .howWeWorking__item:not(:last-child):nth-child(even)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/howWeWorking/arrowUp.png");
+    right: -40px;
+    top: -20px;
+    width: 96px;
+    height: 17px;
+  }
+}
+.howWeWorking__icon {
+  position: relative;
+  margin-bottom: 5px;
+}
+.howWeWorking__icon img {
+  width: 35px;
+  height: 35px;
+}
+.howWeWorking__text {
+  font-size: 14px;
+}
+
+.excellence {
+  /* .excellence__container */
+  /* .excellence__title */
+  /* .excellence__body */
+  /* .excellence__item */
+  /* .excellence__icon */
+  /* .excellence__text */
+}
+.excellence__body {
+  display: grid;
+  grid-template: repeat(3, auto)/repeat(2, 260px) 390px;
+  column-gap: 130px;
+  row-gap: 56px;
+}
+.excellence__item {
+  display: flex;
+}
+.excellence__icon img {
+  width: 60px;
+  height: 60px;
+}
+.excellence__text {
+  font-weight: 700;
+  line-height: 22px;
 }

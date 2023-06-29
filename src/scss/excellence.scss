@@ -1,0 +1,41 @@
+.excellence {
+
+	/* .excellence__container */
+
+	&__container {}
+
+	/* .excellence__title */
+
+	&__title {}
+
+	/* .excellence__body */
+
+	&__body {
+		display: grid;
+		grid-template: repeat(3, auto) / repeat(2, 260px) 390px;
+		column-gap: 130px;
+		row-gap: 56px;
+	}
+
+	/* .excellence__item */
+
+	&__item {
+		display: flex;
+	}
+
+	/* .excellence__icon */
+
+	&__icon {
+		img {
+			width: 60px;
+			height: 60px;
+		}
+	}
+
+	/* .excellence__text */
+
+	&__text {
+		font-weight: 700;
+		line-height: 22px;
+	}
+}

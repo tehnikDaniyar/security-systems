@@ -21,8 +21,5 @@ export const formValidator = () => {
 		} else {
 			tel.classList.remove('error');
 		}
-
-
-
-	})
+	});
 }

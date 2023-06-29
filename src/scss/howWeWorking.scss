@@ -1,0 +1,89 @@
+.howWeWorking {
+	padding: 60px 0;
+
+	/* .howWeWorking_container */
+
+	&_container {}
+
+	/* .howWeWorking__title */
+
+	&__title {
+		margin-bottom: 50px;
+	}
+
+	/* .howWeWorking__body */
+
+	&__body {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width:996px) {
+			justify-content: center;
+		}
+	}
+
+	/* .howWeWorking__item */
+
+	&__item {
+
+		flex: 0 0 100px;
+		margin-bottom: 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@media (min-width:996px) {
+			position: relative;
+			justify-content: start;
+			align-items: start;
+
+			&:not(:last-child):nth-child(odd)::before {
+				content: "";
+				position: absolute;
+				background-image: url("../img/howWeWorking/arrowDown.png");
+				right: -50px;
+				bottom: -30px;
+				width: 96px;
+				height: 17px;
+			}
+
+			&:not(:last-child):nth-child(even)::before {
+				content: "";
+				position: absolute;
+				background-image: url("../img/howWeWorking/arrowUp.png");
+				right: -40px;
+				top: -20px;
+				width: 96px;
+				height: 17px;
+			}
+		}
+
+
+	}
+
+	/* .howWeWorking__icon */
+
+	&__icon {
+		position: relative;
+
+		img {
+			width: 35px;
+			height: 35px;
+		}
+
+
+
+		margin-bottom: 5px;
+	}
+
+	/* .howWeWorking__text */
+
+	&__text {
+		font-size: 14px;
+	}
+}
