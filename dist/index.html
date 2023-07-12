@@ -13,8 +13,8 @@
 		<header class="header" id="header">
 	<div class="header__container _container">
 		<div class="header__body">
-			<div class="header__logo">
-				<a href="#" class="header__logo-link">Монтаж охранных систем</a>
+			<div class="header__logo logo">
+				<a href="#" class="logo__link">Монтаж охранных систем</a>
 			</div>
 			<nav class="header__menu menu-header">
 				<ul class="menu-header__list">
@@ -315,7 +315,51 @@
 				</div>
 			</section>
 		</main>
-		<footer>I footer</footer>
+		<footer class="footer">
+	<div class="footer__top">
+		<div class="footer__container _container">
+			<div class="footer__body">
+				<div class="footer__form">
+					<form class="form" action="#">
+						<div class="form__title">Заказать звонок</div>
+						<div class="form__subtitle">Мы перезвоним вам в течении 15 минут и уладим все технические и
+							организационные вопросы</div>
+						<input type="text" class="form__input" name="name" placeholder="Ваше имя">
+						<input type="tel" class="form__input" name="tel" placeholder="Номер телефона">
+						<button type="submit" class="form__button">Отправить</button>
+					</form>
+				</div>
+				<div class="footer__contacts">
+					<div class="footer__numbers">
+						<a href="tel:+9965050060119">0505006019,</a>
+						<a href="tel:+669703279401">0703279401</a>
+					</div>
+					<div class="footer__text">Мы за 2 минуты обговорим все нюансы <br>
+						и решим вашу задачу</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="footer__container _container">
+			<div class="footer__row">
+				<div class="footer__info">
+					<div class="footer__copyright"></div>
+					<div class="footer__adress"></div>
+					<div class="footer__map">
+						<a class="popup-link" href="#popup-map">показать на карте</a>
+					</div>
+				</div>
+				<nav class="footer__menu">
+					<a href="#">наверх</a>
+				</nav>
+				<div class="footer__logo logo">
+					<a href="#" class="logo__link">Монтаж охранных систем</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 		<div class="popup" id="popup-feedback">
 			<div class="popup__body">
 				<div class="popup__content">
@@ -328,6 +372,19 @@
 						<input type="tel" class="form__input" name="tel" placeholder="Номер телефона">
 						<button type="submit" class="form__button">Отправить</button>
 					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-map">
+			<div class="popup__body">
+				<div class="popup__content popup__content_map">
+					<a href="#header" class="popup__close"></a>
+					<div class="popup__map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.79128953649!2d74.59766397577295!3d42.87724917114951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7ddc401db31%3A0xd868494a462beaa9!2z0JHQtdC70YvQuSDQtNC-0LwsINC_0YDQvtGB0L8uINCn0YPQuSwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1689139968158!5m2!1sru!2skg"
+							width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
 				</div>
 			</div>
 		</div>

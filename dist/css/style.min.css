@@ -128,6 +128,7 @@ body {
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -181,6 +182,18 @@ h2 {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.logo__link {
+  transition: all 0.3s ease 0s;
+  color: #038f28;
+}
+.logo__link:hover {
+  color: white;
 }
 
 @font-face {
@@ -239,20 +252,11 @@ h2 {
 .header__logo {
   flex: 0 0 auto;
   margin-right: 60px;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 @media (max-width: 767px) {
   .header__logo {
     margin-right: 0;
   }
-}
-.header__logo-link {
-  transition: all 0.3s ease 0s;
-  color: #038f28;
-}
-.header__logo-link:hover {
-  color: white;
 }
 .header__menu {
   flex: 1 1 auto;
@@ -761,6 +765,7 @@ h2 {
 
 .excellence {
   background-color: rgb(234, 234, 234);
+  padding-bottom: 300px;
   /* .excellence__container */
   /* .excellence__title */
   /* .excellence__body */
@@ -797,4 +802,80 @@ h2 {
 .excellence__text {
   font-weight: 700;
   line-height: 22px;
+}
+
+.footer {
+  background-color: rgb(42, 42, 42);
+  /* .footer__container */
+  /* .footer__top */
+  /* .footer__body */
+  /* .footer__form */
+  /* .footer__contacts */
+  /* .footer__numbers */
+  /* .footer___text */
+  /* .footer__bottom */
+  /* .footer__info */
+  /* .footer__copyright */
+  /* .footer__adress */
+  /* .footer__map */
+  /* .footer__menu */
+  /* .footer__logo */
+}
+.footer__top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 40px;
+}
+.footer__body {
+  position: relative;
+  padding-top: 250px;
+}
+.footer__form {
+  position: absolute;
+  width: 40%;
+  padding: 20px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.3);
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer__numbers {
+  margin-bottom: 20px;
+}
+.footer__numbers a {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 24px;
+  color: white;
+  margin-right: 20px;
+}
+.footer__text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.footer__bottom {
+  padding: 30px 0;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  /* .form__title */
+  /* .form__subtitle */
+  /* .form__input */
+  /* .form__button */
+}
+.popup__content_map {
+  max-width: 90%;
 }

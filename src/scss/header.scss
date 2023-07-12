@@ -32,8 +32,7 @@
 	&__logo {
 		flex: 0 0 auto;
 		margin-right: 60px;
-		text-transform: uppercase;
-		font-weight: 700;
+
 
 		@media (max-width:767px) {
 			margin-right: 0;
@@ -43,14 +42,7 @@
 
 	/* .header__logo-link */
 
-	&__logo-link {
-		transition: all 0.3s ease 0s;
-		color: $accentColor;
-
-		&:hover {
-			color: white;
-		}
-	}
+	&__logo-link {}
 
 	/* .header__menu */
 
